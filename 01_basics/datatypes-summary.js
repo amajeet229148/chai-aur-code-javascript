@@ -25,7 +25,7 @@ console.log(typeof bigNumber);
 //Refrence type => they are basically call by refrence (Non-primitive)
 //Array, Object, Function
 
-const heros = ["shaktiman", "batman", "naagraj"]
+//const heros = ["shaktiman", "batman", "naagraj"]
  let myObj = {
     name: "amarjeet",
     age: 23
@@ -34,4 +34,30 @@ const heros = ["shaktiman", "batman", "naagraj"]
  const myFunction = function(){
     console.log("hello world");
  }
- console.log(typeof myFunction);
+ //console.log(typeof myFunction);
+
+ // ++++++++++++++++++++++++
+
+ // stack(primitive), heap memory(none primitive)
+ // in stack we get the copy of variable and in heap we get the original value refrence
+
+
+ //stack memory example
+ let myYoutubeName = "amarjeetchoudharydotcom"
+ let anotherName = myYoutubeName
+
+ anotherName = "chaiaurcode"
+
+ console.log(myYoutubeName);
+ console.log(anotherName);
+
+ //heap memory example
+ let userOne = {
+   email: "amarjeet45@gmail.com",
+   upi: "user@ybl"
+ }
+ let userTwo = userOne
+ userTwo.email = "amarjeetchoudhary647@gmail.com"
+
+ console.log(userOne.email);
+ console.log(userTwo.email);

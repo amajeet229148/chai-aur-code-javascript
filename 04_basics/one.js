@@ -11,6 +11,7 @@ const temprature = 41
 // }
 // console.log("amar");
 
+// <, >, <=, >=, ==, !==, ===, !==
 const score = 200
 
 // if(score > 100){
@@ -41,7 +42,7 @@ const loggedIn = true
 const loggedInFromGoogle = false
 const loggedInFromEmail = true
 
-if (debitCard && loggedIn && 2 < 2) {   //used for every statement true with && operator
+if (debitCard && loggedIn && 2 < 2) { //used for every statement has to be true with && operator
     console.log("amar");
 }
 

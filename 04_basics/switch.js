@@ -27,3 +27,4 @@ switch (month) {
     default:
         console.log("manish");  //executed when the switch statement are false
         break;
+}

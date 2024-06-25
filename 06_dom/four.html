@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black; color: #fff;">
+    <ul class="language">
+        <li>javascript</li>
+    </ul>
+    
+</body>
+<script>
+    function addLanguage(langName){
+        const li = document.createElement('li')
+        li.innerHTML = (langName)
+        document.querySelector('.language').appendChild(li)
+    }
+    addLanguage("python")
+    
+
+
+    //++++use for big project optimized way
+    function addOptiLanguage(langname){
+       const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langname))
+        document.querySelector('.language').appendChild(li)
+    }
+    addOptiLanguage("python")
+
+
+    //EDIT
+    const newlang = document.querySelector("li:nth-child(2)")
+    //newlang.innerHTML = "MOJO"
+    const newli = document.createElement('li')
+    newli.textContent = "mojo"
+    newlang.replaceWith(newli)
+
+    const secondchild = document.querySelector("li:first-child")
+    secondchild.outerHTML = "<li>typescript</>"
+
+    // remove 
+    const removelang = document.querySelector("li:last-child")
+    removelang.remove()
+</script>
+</html>

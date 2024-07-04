@@ -25,17 +25,20 @@
 // const date = new date() //new is a contsructor
 
 
-function user(username, isloggedin, age){
+function user1(username, isloggedin, age){
 this.username = username;
 this.isloggedin = isloggedin;
 this.age = age;
 
-//return this    //++++we dont have need to return it is given defaulty define implictly
+this.greeting = function(){
+    console.log(`welcome ${this.username}`);
+}
+return this    //++++we dont have need to return it is given defaulty define implictly
 }
 
-const userTwo = new user('amarjeet', true, 25)
-const usertwo = new user('manish', false, 34)
+const userTwo = new user1('amarjeet', true, 25)
+const usertwo = new user1('manish', false, 34)
 
-console.log(userTwo.username);
 console.log(userTwo);
-console.log(usertwo);
+console.log(userTwo);
+console.log(usertwo.constructor);

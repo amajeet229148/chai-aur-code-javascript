@@ -31,14 +31,14 @@ this.isloggedin = isloggedin;
 this.age = age;
 
 this.greeting = function(){
-    console.log(`welcome ${this.username}`);
+    console.log(`${this.username}`);
 }
-return this    //++++we dont have need to return it is given defaulty define implictly
+// return this    //++++we dont have need to return it is given defaulty define implictly
 }
 
 const userTwo = new user1('amarjeet', true, 25)
 const usertwo = new user1('manish', false, 34)
 
-console.log(userTwo);
-console.log(userTwo);
+// console.log(userTwo);
+// console.log(userTwo);
 console.log(usertwo.constructor);

@@ -21,7 +21,7 @@ Object.defineProperty(chai, 'price', {
 console.log(Object.getOwnPropertyDescriptor(chai, 'price'));
 
 for (const [key, value] of Object.entries(chai)) {
-  if (typeof value !== 'function') {
+  if (typeof value !== 'function') { // use for remove function means code fatne se bachane ke liye use krte hai
     console.log(`${key}, ${value}`);
   }
     
